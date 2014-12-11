@@ -44,7 +44,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <finalName>${artifactId}-${version}</finalName>
+                    <finalName>printArgsAndEnv</finalName>
                 </configuration>
             </plugin>
 
