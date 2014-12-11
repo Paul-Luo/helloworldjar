@@ -21,7 +21,9 @@ public class HelloWorld {
 
 
     public static void printToFile(String[] args) throws Exception {
-        File outDir = new File("/home/vagrant/output");
+        String userHome = System.getProperty("user.home");
+        File userFile = new File(userHome);
+        File outDir = new File(userFile, "output");
         if (!outDir.exists()) {
             outDir.mkdirs();
         }
